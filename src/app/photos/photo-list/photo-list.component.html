@@ -1,0 +1,4 @@
+<lp-search (onTyping)="filter = $event" [value]="filter"> </lp-search>
+<lp-photos [photos]="photos | filterByDescription: filter"></lp-photos>
+
+<lp-load-button (click)="load()" [hasMore]="hasMore"></lp-load-button>
